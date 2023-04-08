@@ -1,0 +1,83 @@
+/* Write your CSS here */
+.icon {
+  height: 30px;
+  width: 30px;
+}
+.bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #161625;
+}
+.cowin-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  min-height: 100vh;
+  background-size: cover;
+  color: white;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.icon-and-name {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+  max-width: 135px;
+
+  margin-left: -20px;
+}
+.para {
+  font-size: 18px;
+  margin-top: -20px;
+  font-family: 'roboto';
+}
+.cowin-text {
+  color: #2cc6c6;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.background {
+  background-color: #1c1c2b;
+}
+.background {
+  background-color: #1c1c2b;
+  width: 1000px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.para-of-bar {
+  color: #6c757d;
+  font-size: 20px;
+}
+.failure-view-para {
+  height: 600px;
+  width: 800px;
+}
+.error-failure-msg {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+.failure-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.website-logo {
+  height: 30px;
+  width: 30px;
+}

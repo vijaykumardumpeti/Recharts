@@ -53,7 +53,7 @@
 }
 .background {
   background-color: #1c1c2b;
-  width: 1000px;
+  min-width: 1000px;
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;

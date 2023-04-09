@@ -30,11 +30,8 @@ export default class CowinDashboard extends Component {
     this.setState({apiStatus: apiStatusConstants.inProgress})
     const covidVaccinationDataApiUrl =
       'https://apis.ccbp.in/covid-vaccination-data'
-    const options = {
-      method: 'GET',
-    }
 
-    const response = await fetch(covidVaccinationDataApiUrl, options)
+    const response = await fetch(covidVaccinationDataApiUrl)
     if (response.ok === true) {
       const data = await response.json()
       this.setState({apiStatus: apiStatusConstants.success})
@@ -84,7 +81,7 @@ export default class CowinDashboard extends Component {
         </div>
 
         <div className="vaccination-by-age-container background">
-          <h1 className="para-of-bar">Vaccination by age</h1>
+          <h1 className="para-of-bar">Vaccination by Age</h1>
           <VaccinationByAge byAgeData={byAgeData} />
         </div>
       </div>
@@ -136,8 +133,8 @@ export default class CowinDashboard extends Component {
               <p className="cowin-text">Co-WIN</p>
             </div>
             <h1 className="para">coWIN Vaccination in India</h1>
+            {this.switchMethod()}
           </div>
-          {this.switchMethod()}
         </div>
       </div>
     )
